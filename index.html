@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+  <title>Dashboard Template for Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/dashboard.css" rel="stylesheet">
+</head>
+
+<body class="container">
+
+  <!--Top Nav-->
+  <header class="navbar navbar-dark bg-dark p-0 flex-nowrap fixed-top shadow">
+    <a class="navbar-brand col-2 mr-0" href="#">Company name</a>
+    <input class="form-control  form-control-dark bg-dark" type="text" placeholder="Search" aria-label="Search">
+    <div class="navbar-nav px-3">
+       <a class="nav-link py-0 text-nowrap" href="#">Sign out</a>
+    </div>
+  </header>
+
+  <!--SideBar-->
+  <nav class="col-2 bg-light sidebar">
+    
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">
+            Dashboard <span class="">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Orders
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Products
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Customers
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Reports
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Integrations
+          </a>
+        </li>
+      </ul>
+
+      <h6 class="sidebar-heading px-3 mt-4">
+        <span>Saved reports</span>
+      </h6>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Current month
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Last quarter
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Social engagement
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Year-end sale
+          </a>
+        </li>
+      </ul>
+   
+  </nav>
+
+  <main role="main" class="col-10 ml-auto px-4">
+
+    <!--Title and buttons share, export , dropdown-->
+    <div class="d-flex justify-content-between align-items-center mt-2 border-bottom mb-3 pb-2">
+      <h1 class="h2">Dashboard</h1>
+      <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group mx-2" role="group" aria-label="First group">
+          <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+          <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+        </div>
+
+         <div class="dropdown">
+          <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            This week
+          </button>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">last two weeks</a>
+            <a class="dropdown-item" href="#">last month</a>
+            <a class="dropdown-item" href="#">last three months</a>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <!--Card and tabs-->
+    <div class="row">
+       <!--card-->
+      <div class="col-3">
+       
+        <div class="card text-center" style="max-width: 18rem;">
+          <div class="card-header">New Comments</div>
+          <div class="card-body">
+            <h5 class="card-title">103</h5>
+            <a href="#" class="btn btn-link btn-lg">See +</a>
+          </div>
+        </div>
+      </div>
+
+      <!--tabs-->
+      <div class="col-9">
+        
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="lastNews-tab" data-toggle="tab" href="#lastNews" role="tab" 
+            aria-controls="lastNews" aria-selected="true">Last News<span class="ml-1 badge badge-primary badge-pill">3</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="support-tab" data-toggle="tab" href="#support" role="tab" 
+            aria-controls="support" aria-selected="false">Support</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="lastNews" role="tabpanel" aria-labelledby="lastNews-tab">
+
+            <div class="d-flex justify-content-between">
+              <!--list group-->
+              <div class="list-group w-100">
+                
+                <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+                  <div class="d-flex w-100 justify-content-between">
+                     <p class="mb-0">Some placeholder content in a paragraph.</p>
+                    <small>3 days ago</small>
+                  </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                     <p class="mb-0">Some placeholder content in a paragraph.</p>
+                    <small>3 days ago</small>
+                  </div>   
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                     <p class="mb-0">Some placeholder content in a paragraph.</p>
+                    <small>3 days ago</small>
+                  </div>
+                 </a>
+              </div>    
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="support" role="tabpanel" aria-labelledby="support-tab">
+
+            <div class="d-flex flex-column justify-content-between">
+              <h4 class="mt-2">Get in Touch:</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque voluptates,
+                 consectetur itaque cum ullam ea accusantium aspernatur porro alias natus laborum,
+                  provident maxime! Rerum numquam explicabo, necessitatibus atque voluptatem porro!
+              </p>
+              
+              mail@server.com 
+              <br>
+              2121-5652
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <h2>Last Users</h2>
+
+    <!--table-->
+    <table class="table table-striped table-sm">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Header</th>
+            <th scope="col">Header</th>
+            <th scope="col">Header</th>
+            <th scope="col">Header</th>
+          
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1,001</th>
+            <td>Lorem</td>
+            <td>ipsum</td>
+            <td>dolor</td>
+            <td>sit</td>
+          </tr>
+          <tr>
+            <th scope="row">1,002</th>
+            <td>amet</td>
+            <td>consectetur</td>
+            <td>adipiscing</td>
+            <td>elit</td>
+          </tr>
+          <tr>
+            <th scope="row">1,003</th>
+            <td>Integer</td>
+            <td>nec</td>
+            <td>odio</td>
+            <td>Praesent</td>
+          </tr>
+          <tr>
+            <th scope="row">1,004</th>
+            <td>Integer</td>
+            <td>nec</td>
+            <td>odio</td>
+            <td>Praesent</td>
+          </tr>
+          <tr>
+            <th scope="row">1,005</th>
+            <td>Integer</td>
+            <td>nec</td>
+            <td>odio</td>
+            <td>Praesent</td>
+          </tr>
+          <tr>
+            <th scope="row">1,006</th>
+            <td>Integer</td>
+            <td>nec</td>
+            <td>odio</td>
+            <td>Praesent</td>
+          </tr>
+          <tr>
+            <th scope="row">1,007</th>
+            <td>Integer</td>
+            <td>nec</td>
+            <td>odio</td>
+            <td>Praesent</td>
+          </tr>
+          <tr>
+            <th scope="row">1,008</th>
+            <td>Integer</td>
+            <td>nec</td>
+            <td>odio</td>
+            <td>Praesent</td>
+          </tr>
+          <tr>
+            <th scope="row">1,009</th>
+            <td>Integer</td>
+            <td>nec</td>
+            <td>odio</td>
+            <td>Praesent</td>
+          </tr>
+          <tr>
+            <th scope="row">1,010</th>
+            <td>Integer</td>
+            <td>nec</td>
+            <td>odio</td>
+            <td>Praesent</td>
+          </tr>
+          <tr>
+            <th scope="row">1,011</th>
+            <td>Integer</td>
+            <td>nec</td>
+            <td>odio</td>
+            <td>Praesent</td>
+          </tr>
+          <tr>
+            <th scope="row">1,012</th>
+            <td>Integer</td>
+            <td>nec</td>
+            <td>odio</td>
+            <td>Praesent</td>
+          </tr>
+          <tr>
+            <th scope="row">1,013</th>
+            <td>Integer</td>
+            <td>nec</td>
+            <td>odio</td>
+            <td>Praesent</td>
+          </tr>
+          <tr>
+            <th scope="row">1,014</th>
+            <td>Integer</td>
+            <td>nec</td>
+            <td>odio</td>
+            <td>Praesent</td>
+          </tr>
+          <tr>
+            <th scope="row">1,015</th>
+            <td>Integer</td>
+            <td>nec</td>
+            <td>odio</td>
+            <td>Praesent</td>
+          </tr>
+        </tbody>
+    </table>
+    <!--end of table-->
+    
+
+    <!-- aqui entra a paginacao -->
+
+    <div aria-label="Page navigation" class="mt-4">
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>   
+
+</body>
+</html>
